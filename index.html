@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título do Seu eBook</title>
+    <link rel="stylesheet" href="assets/style.css">
     
 </body>
     <style>
@@ -21,9 +22,12 @@
             text-align: center;
             padding: 20px;
             background-color: #EFA401;
-            color: #fff;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .main-box{
+            box-shadow: 5px 1px 5px black;
         }
 
         section, img{
@@ -44,7 +48,7 @@
 
         h1 {
             color: white;
-            font-size: 25px;
+            font-size: 35px;
         }
 
         h2 {
@@ -67,6 +71,13 @@
 
         a.button:hover {
             background-color: #00274D;
+            color:#EFA401;
+            background: black;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black,
+                        0 0 25px black,
+                        0 0 50px white,
+                        0 0 100px white;
         }
 
         footer {
@@ -77,8 +88,6 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
-        
     </style>
 </head>
 <body>
@@ -86,7 +95,7 @@
             <h1>TDAH - Estratégias e Empoderamento</h1>
         </header>
 
-        <section>
+        <section class="main-box">
 
         <section>
             <img src="assets/img/1.png" alt="Imagem 1">
@@ -107,7 +116,7 @@
 
 
         <section>
-            <h1 style="color: black;">Acesse o Link e garanta o seu!</h1>
+            <h1 style="color: black; margin-bottom: 20px; font-style: i;">Acesse o Link e garanta o seu!</h1>
             <p></p>
             <p style="display: flex; justify-content: center;"><a href="https://pay.kiwify.com.br/Lcb9IYr" download class="button">Baixar eBook</a></p>
         </section>
