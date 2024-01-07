@@ -9,6 +9,7 @@
 </body>
     <style>
         body {
+            font-family:Arial, Helvetica, sans-serif ;
             display: grid;
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -31,9 +32,13 @@
         }
 
         section, img{
-            box-shadow: 5px 1px 5px black;
+
             display: grid;
             justify-content: center;
+        }
+
+        .img-box{
+            box-shadow: 5px 1px 5px black;
         }
 
         section {
@@ -48,11 +53,19 @@
 
         h1 {
             color: white;
-            font-size: 35px;
+            font-size: 30px;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         h2 {
-            font-style: italic;
+            text-align: justify;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        p{
+            margin: 5px;
+            text-align: center;
+            font-size: 30px
         }
 
         a {
@@ -89,9 +102,14 @@
             border-top-right-radius: 10px;
         }
         
-        @media only screen and (min-width: 400px) {
-            section, body, img, header, footer{
-                max-width: auto;
+        @media only screen and (max-width: 400px) {
+            section, 
+            body, 
+            img, 
+            header, 
+            footer, 
+            h1{
+                width: auto;
     }
 }
 
@@ -101,33 +119,59 @@
 </head>
 <body>
         <header>
-            <h1>TDAH - Estratégias e Empoderamento</h1>
+            <h1>TDAH </h1>
+            <h1>Estratégias e Empoderamento</h1>
+
+            <p style="font-size: 20px; text-align: justify; text-align: center; ">
+                Role para baixo e saiba mais </p>
+            <img style="align-items: center;" src="assets/img/scrolldown.png" alt="scroll-down">
         </header>
 
         <section class="main-box">
 
-        <section>
-            <img src="assets/img/1.png" alt="Imagem 1">
+        <section class="img-box">
+            <img src="https://github.com/ypoolz/Beleo.P/blob/main/assets/img/1.png?raw=true" alt="Imagem 1">
+        </section>
+
+        <section class="img-box">
+            <img src="https://github.com/ypoolz/Beleo.P/blob/main/assets/img/2.png?raw=true" alt="Imagem 2">
+        </section>
+
+        <section class="img-box">
+            <img src="https://github.com/ypoolz/Beleo.P/blob/main/assets/img/3.png?raw=true" alt="Imagem 3">
         </section>
 
         <section>
-            <img src="assets/img/2.png" alt="Imagem 2">
-        </section>
-
-        <section>
-            <img src="assets/img/3.png" alt="Imagem 3">
-        </section>
-
-        <section>
-            <h2> Este eBook é um guia que aborda o Transtorno do Déficit de Atenção e Hiperatividade (TDAH) na vida adulta. Ele fornece informações sobre como identificar os sinais de TDAH, mitos comuns sobre a condição, abordagens diagnósticas, opções de tratamento, estratégias para o sucesso acadêmico e impacto nos relacionamentos. O objetivo do PDF é fornecer informações úteis para pessoas que lidam com o TDAH na vida adulta e para aqueles que desejam entender melhor a condição.</h2>
+            <p>Sobre o que é este eBook</p>
+            <h2> Este eBook é um guia que aborda o Transtorno do Déficit de Atenção e Hiperatividade (TDAH) na vida adulta. 
+                Ele fornece informações sobre como identificar os sinais de TDAH, mitos comuns sobre a condição, abordagens diagnósticas, 
+                opções de tratamento, estratégias para o sucesso acadêmico e impacto nos relacionamentos. Tendo como objetivo fornecer informações 
+                úteis para pessoas que lidam com o TDAH na vida adulta e para aqueles que desejam entender melhor a condição.</h2>
             
         </section>
 
+        <section>   
+            <p style="font-size: 20px; text-align: justify;">
+                🚨 Edição Limitada - Garanta o Seu Agora!
+                Este incrível eBook está disponível apenas por tempo limitado. Não deixe escapar a oportunidade de impulsionar sua jornada de crescimento pessoal. Lembre-se: apenas aqueles que agem alcançam grandes alturas!
+                <br>
+                <br>
+                🔒 Compra Segura e Garantia de Satisfação:
+                Nossa prioridade é sua satisfação total. Oferecemos uma garantia de 100%. Se, por qualquer motivo, você não estiver satisfeito, reembolsaremos seu investimento sem fazer perguntas.
+                <br>
+                <br>
+                🌐 Como Obter Seu Exemplar:
+                Transforme sua vida agora! Clique no botão abaixo e dê o primeiro passo para um futuro mais brilhante e consciente.
+                <br>
+                Não perca esta oportunidade única.  Investir em conhecimento é investir em si mesmo! 🚀</p>
+        
+            </p>
+        </section>
 
-        <section>
-            <h1 style="color: black; margin-bottom: 20px; font-style: i;">Acesse o Link e garanta o seu!</h1>
-            <p></p>
-            <p style="display: flex; justify-content: center;"><a href="https://pay.kiwify.com.br/Lcb9IYr" download class="button">Baixar eBook</a></p>
+        <section style="font-size: 40px";>
+            <h2 style="color: black; margin-bottom: 20px; font-style: i;">
+                Acesse o Link e garanta o seu!</h2>
+            <p style="display: flex; justify-content: center;"><a href="https://pay.kiwify.com.br/Lcb9IYr" download class="button">Clique Aqui</a></p>
         </section>
     </section>    
         
