@@ -49,12 +49,13 @@ section {
 h1 {
     color: white;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
 
 h2 {
     text-align: justify;
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-weight: 50;
     font-size: 40px;
 }
 p{
@@ -63,14 +64,7 @@ p{
     font-size: 30px;
     text-align: justify;
 }
-.scrolldown{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
+
 
 a {
     color: #EFA401;
@@ -86,6 +80,28 @@ a.button {
     transition: background-color 0.s ease-in-out;
 }
 
+#scrollButton{
+    display: inline-block;
+    background-color: #004AAD;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.s ease-in-out;
+
+}
+
+#scrollButton:hover {
+    background-color: #00274D;
+    color:#EFA401;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black,
+                0 0 25px black,
+                0 0 50px white,
+                0 0 100px white;
+}
+
 a.button:hover {
     background-color: #00274D;
     color:#EFA401;
@@ -95,6 +111,7 @@ a.button:hover {
                 0 0 25px black,
                 0 0 50px white,
                 0 0 100px white;
+                
 }
 
 footer {
@@ -132,7 +149,7 @@ footer {
     h1, h2{
         margin: 5px;
         text-align: center;
-        font-size: 20px;
+        font-size: 30px;
         
     }
     .main-box{
