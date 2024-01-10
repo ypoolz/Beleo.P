@@ -1,16 +1,19 @@
 body {
     font-family:Arial, Helvetica, sans-serif ;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background: linear-gradient(120deg, #004AAD, #004AAD);
+    width: auto;
     
 }
 
 header {
     display: grid;
     text-align: center;
+    margin: 5px;
     padding: 20px;
     background-color: #EFA401;
     border-bottom-left-radius: 10px;
@@ -19,31 +22,32 @@ header {
 
 .main-box{
     box-shadow: 5px 1px 5px black;
-}
+    display: flex;
 
-section, img{
-
-    display: grid;
-    justify-content: center;
 }
 
 .img-box{
     box-shadow: 5px 1px 5px black;
+    display: flex;
+    width: auto;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     max-width: 600px;
-    margin: 20px auto;
+    width: auto;
+    margin: 5px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    
+    align-content: center;
 }
 
 h1 {
     color: white;
-    font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -51,11 +55,21 @@ h2 {
     text-align: justify;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 100;
+    font-size: 40px;
 }
 p{
     margin: 5px;
     text-align: center;
-    font-size: 30px
+    font-size: 30px;
+    text-align: justify;
+}
+.scrolldown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 a {
@@ -90,16 +104,51 @@ footer {
     color: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin: 5px;
 }
 
 @media only screen and (max-width: 400px) {
-    section, 
-    body, 
-    img, 
-    header, 
-    footer, 
-    h1{
+    body {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        padding: 10px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
         width: auto;
-}
+        margin: 5px;
+        padding: 5px;
+    }
+    p{
+        margin: 5px;
+        text-align: center;
+        font-size: 20px;
+        text-align: justify;
+    }
+    h1, h2{
+        margin: 5px;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    .img-box{
+        display: flex;
+        width: 90%;
+        
+    }
+    footer {
+        padding: 10px;
+    }
+
 }
 
